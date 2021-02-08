@@ -1,120 +1,222 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-/* Reset */
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+/********* Reset */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-/* Main Elements */
+/************ Main Elements */
 body {
-    font-family: 'Roboto', sans-serif;
-    
+  font-family: "Roboto", sans-serif;
 }
 
-a{
-    text-decoration:none;
+a {
+  text-decoration: none;
 }
 
-p{
-    margin: 0.7rem 0rem;
+p {
+  margin: 0.7rem 0rem;
 }
 
-/* Utility */
+/********* Utility */
 
-.l-heading{
-    font-size: 3rem;
+.l-heading {
+  font-size: 3rem;
 }
 
-.text-primary{
-    color: #81a658;
+.m-heading {
+  font-size: 1.2rem;
 }
 
-.btn{
-    background-color: #81a658;
-    color: #ffffff;
+.text-primary {
+  color: #81a658;
 }
 
-.btn:hover{
-    background-color: #709447;
-    color: #ffffff;
+.text-secondary {
 }
 
-
-
-/* Nav Bar */
-#navbar{
-    position: sticky;
-    top: 0;
-
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-
-    background-color: #262626;
-    color: #ffffff;
-    padding: 0.8rem 1rem;
-
+.bg-light {
 }
 
-#navbar .logo a{
-    color: #ffffff;
+.bg-dark {
+  background-color: #333333;
+  color: #ffffff;
 }
 
-#navbar ul{
-    display: flex;
-    align-items:center;
-
-    list-style: none;
+.py-1 {
+  padding: 1rem 0;
 }
 
-#navbar ul li a{
-    color: #ffffff;
-    padding: 0.5rem 1rem;
-    margin: 0.2rem;
-    border-radius: 5px;
+.py-2 {
+  padding: 2rem 0;
 }
 
-#navbar ul li a:hover{
-    background-color:  #81a658;
+.py-3 {
+  padding: 3rem 0;
 }
 
-/* Showcase */
-#showcase{
-    background: url(../img/showcase.jpg) 
-    no-repeat center center/cover;
-    height: 100vh;
-    color: #ffffff;
+.p-1 {
+  padding: 1rem;
 }
 
-#showcase .showcase-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-   
-    background-color: rgba(0, 0, 0, 0.4);
-    height: 100%;
+.p-2 {
+  padding: 2rem;
 }
 
-#showcase .showcase-content .l-heading{
-    /* line-height: 1.2; */
+.p-3 {
+  padding: 3rem;
 }
 
-#showcase .showcase-content .lead{
-    font-size:1.1rem;
-    padding: 0 2rem;
-    margin-bottom: 1.3rem;
-    line-height: 1.5;
+.btn {
+  background-color: #81a658;
+  color: #ffffff;
 }
 
-#showcase .showcase-content .btn{
-    padding: 0.5rem 2rem;
-    border-radius: 5px;
+.btn:hover {
+  background-color: #709447;
+  color: #ffffff;
 }
 
+/*********** Nav Bar */
+#navbar {
+  position: sticky;
+  top: 0;
 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+  background-color: #262626;
+  color: #ffffff;
+  padding: 0.8rem 1rem;
+}
 
+#navbar .logo a {
+  color: #ffffff;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  margin: 0.2rem;
+  border-radius: 5px;
+}
+
+#navbar ul li a:hover {
+  background-color: #81a658;
+}
+
+/************ Showcase */
+#showcase {
+  background: url(../img/showcase.jpg) no-repeat center center/cover;
+  height: 100vh;
+  color: #ffffff;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+}
+
+#showcase .showcase-content .l-heading {
+  /* line-height: 1.2; */
+}
+
+#showcase .showcase-content .lead {
+  font-size: 1.1rem;
+  padding: 0 2rem;
+  margin-bottom: 1.3rem;
+  line-height: 1.5;
+}
+
+#showcase .showcase-content .btn {
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+}
+
+/************** What we do */
+
+#what .container {
+  width: 80%;
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+#what .items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#what .items .item {
+  flex: 1;
+  margin: 0.5rem;
+}
+#what .items .item i {
+  margin-bottom: 0.7rem;
+  background-color: #81a658;
+  padding: 0.6rem;
+  border-radius: 50%;
+}
+
+/************ Who Are We  */
+#who {
+  display: flex;
+  flex-direction: row;
+}
+
+#who div {
+  flex: 1;
+}
+
+#who .who-image {
+  background: url("/img/people.jpg") no-repeat center center/cover;
+}
+
+#who .who-text ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+#who .who-text ul li {
+  border-bottom: 1px grey dotted;
+  margin-bottom: 0.75rem;
+}
+
+/****************** Our Clients  */
+#clients h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#clients .clients {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+#clients .clients .item img {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+/********** Contact Form & Map */
+
+/*********** Footer  */
