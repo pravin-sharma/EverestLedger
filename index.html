@@ -42,7 +42,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem repudiandae dicta maxime vitae debitis
                 similique?
             </p>
-            <a href="#what" class="btn">Read More</a>
+            <a href="#what" class="btn-primary">Read More</a>
         </div>
     </header>
 
@@ -107,10 +107,10 @@
 
     <!-- Clients -->
     <section id="clients">
-        <h2 class="m-heading p-1">
+        <h2 class="m-heading">
             <span class="text-primary">Our</span> Clients
         </h2>
-        <div class="clients py-1">
+        <div class="clients">
             <div class="item">
                 <img src="/img/logos/logo1.png" alt="">
             </div>
@@ -130,9 +130,48 @@
     </section>
 
     <!-- Contact Form & Map  -->
+    <section id="form-map">
+        <div class="contact-form p-1 bg-primary">
+            <h1>Contact Us</h1>
+            <p>
+                Please use the below form to contact us
+            </p>
+            <form class="p-half">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text id=" name" name="name" placeholder="Enter Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text id=" email" name="email" placeholder="Enter Email">
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="text id=" phoneNumber" name="phoneNumber" placeholder="Enter Phone Number">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea type="text id=" message" name="message" placeholder="Enter Message"></textarea>
+                </div>
+                <button type='submit' class="btn-dark">Send</button>
+            </form>
+        </div>
+        <div id="map" class="p-1"></div>
 
+    </section>
     <!-- Footer -->
+    <footer class="main-footer bg-dark text-center py-1">
+        <div class="container">
+        <p>Copyright &copy; 2021, Everest Ledger, All rights reserved</p>
+        </div>
+    </footer>
 
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkbBuVTlafh74gzZnifaEL7cglAMv_Drs&callback=initMap"
+    async defer></script>
+    
 </body>
 
 </html>
