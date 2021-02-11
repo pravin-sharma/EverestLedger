@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" media="screen and (max-width:768px)" href="./css/mobile.css">
-    <link rel="stylesheet" media="screen and (max-width:1100px)" href="./css/widescreen.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" media="screen and (max-width:1100px)" href="./css/widescreen.css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="./css/mobile.css">
+
+
 
     <script src="https://kit.fontawesome.com/c8dde5e660.js" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
@@ -20,8 +22,8 @@
     <nav id="navbar">
         <h3 class="logo">
             <a href="#home">
-                <span class="text-primary">
-                    <i class="fas fa-mountain"></i> Everest</span> Ledger
+                    <i class="fas fa-mountain text-primary"></i>
+                    <span class="text-primary">Everest</span>Ledger
             </a>
         </h3>
         <ul>
@@ -50,32 +52,39 @@
 
     <section id="what">
         <div class="container">
-            <p>
-            <h3 class="m-heading">
+            <h2 class="m-heading">
                 <span class="text-primary">What</span> We Do
-            </h3>
-            </p>
+            </h2>
             <div class="items">
                 <div class="item">
-                    <i class="fas fa-university"></i>
-                    <h5>Investment Banking</h5>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, corporis.
-                    </p>
+                    <i class="fas fa-university fa-2x"></i>
+                    <div>
+                        <h4>Investment Banking</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, corporis.
+                        </p>
+                    </div>
+
                 </div>
                 <div class="item">
-                    <i class="fas fa-book-reader "></i>
-                    <h5>Portfolio Management</h5>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, corporis.
-                    </p>
+                    <i class="fas fa-book-reader fa-2x"></i>
+                    <div>
+                        <h4>Portfolio Management</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, corporis.
+                        </p>
+                    </div>
+
                 </div>
                 <div class="item">
-                    <i class="fas fa-pencil-alt "></i>
-                    <h5>Tax & Custodial</h5>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, corporis.
-                    </p>
+                    <i class="fas fa-pencil-alt fa-2x"></i>
+                    <div>
+                        <h4>Tax & Custodial</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, corporis.
+                        </p>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -130,7 +139,7 @@
     </section>
 
     <!-- Contact Form & Map  -->
-    <section id="form-map">
+    <section id="contact">
         <div class="contact-form p-1 bg-primary">
             <h1>Contact Us</h1>
             <p>
@@ -162,16 +171,23 @@
     <!-- Footer -->
     <footer class="main-footer bg-dark text-center py-1">
         <div class="container">
-        <p>Copyright &copy; 2021, Everest Ledger, All rights reserved</p>
+            <p>Copyright &copy; 2021, Everest Ledger, All rights reserved</p>
         </div>
     </footer>
 
 
     <!-- Scripts -->
+
+    <!-- Jquery -->
+    <script src="/js/jquery/jquery-3.5.1.min.js"></script>
+
+    <!-- main.js -->
     <script src="js/main.js"></script>
+
+    <!-- Google maps api -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkbBuVTlafh74gzZnifaEL7cglAMv_Drs&callback=initMap"
-    async defer></script>
-    
+        async defer></script>
+
 </body>
 
 </html>

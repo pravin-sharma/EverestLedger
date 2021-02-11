@@ -27,7 +27,7 @@ p {
 }
 
 .m-heading {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .text-center{
@@ -102,6 +102,8 @@ p {
   position: sticky;
   top: 0;
 
+  z-index: 4;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -113,6 +115,11 @@ p {
 
 #navbar .logo a {
   color: #ffffff;
+}
+
+#navbar .logo i {
+  position: relative;
+  top: -2px;
 }
 
 #navbar ul {
@@ -174,6 +181,11 @@ p {
   margin: auto;
   padding: 1rem;
   text-align: center;
+  /* align-content: center; */
+}
+#what .container .m-heading{
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 #what .items {
@@ -190,6 +202,7 @@ p {
 #what .items .item i {
   margin-bottom: 0.7rem;
   background-color: #81a658;
+
   padding: 0.6rem;
   border-radius: 50%;
 }
@@ -231,7 +244,7 @@ p {
   display: flex;
   padding: 2rem 4rem;
   justify-content: space-evenly;
-  width: 70%;
+  width: 90%;
   margin: auto;
 }
 
@@ -242,35 +255,35 @@ p {
 }
 
 /********** Contact Form & Map */
-#form-map{
+#contact{
     display: flex;
 }
 
-#form-map .contact-form, 
-#form-map #map{
+#contact .contact-form, 
+#contact #map{
   flex: 1;
 }
 
-#form-map .contact-form .form-group label{
+#contact .contact-form .form-group label{
   display: block;
   margin-bottom: 0.1rem;
 }
 
-#form-map .contact-form .form-group input,
-#form-map .contact-form .form-group textarea{
+#contact .contact-form .form-group input,
+#contact .contact-form .form-group textarea{
   width: 100%;
   border: 1px solid #f4f4f4;
   padding: 0.5rem;
   margin-bottom: 0.7rem;
 }
 
-#form-map .contact-form .btn-dark{
+#contact .contact-form .btn-dark{
   padding: 0.5rem 1rem;
   border: none;
 }
 
-#form-map #map {
-  z-index: -1;
+#contact #map {
+  
 }
 
 

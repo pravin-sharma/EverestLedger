@@ -1,1 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* Navbar */
+@media (max-width:576px){
+    #navbar{
+       display: block;
+       text-align: center;
+    }
+
+    #navbar ul {
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+        padding-bottom: 0.3rem;
+      }
+}
+
+@media (max-width:334px){
+    #navbar{
+       display: block;
+       text-align: center;
+       padding-top: 0.75rem;
+       padding-left: 0;
+       padding-right: 0;
+       padding-bottom: 0;
+    }
+
+    #navbar ul {
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        padding-top: 0.5rem;
+        /* padding-bottom: 0.1rem; */
+        
+      }
+    #navbar ul li {
+        margin: 0.2rem 0;
+        border-bottom: 1px solid #333;
+        width: 100%;
+      }
+    
+      #navbar ul li:last-child {
+        border-bottom: none;
+      }
+}
+
+/* Section: What we do */
+#what .items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Section: Who we are */
+  #who {
+    display: block;
+  }
+
+  #who .who-image {
+    display: none;
+}
+
+/* Section: Clients */
+#clients .clients {
+    width: 100%;
+  }
+
+#clients .clients div:last-child {
+    display: none;
+  }
+
+#clients .clients .item img {
+    display: block;
+    width: 80%;
+    margin: auto;
+  }
+
+/* Section: Contact */
+
+#contact{
+    display: block;
+}
+
+#contact #map {
+    border-top: 3px solid #333;
+    height: 300px;
+}
