@@ -1,3 +1,9 @@
 # Everest Ledger
-This is a source code a Responsive Website using Flex box and media queries.
-Used jquery for Smooth Scrolling.
+Finance Compnay Portfolio Website
+
+Functionality:
+1.  Responsive Website using Flex box and media queries.
+2.  Smooth Scrolling using jquery.
+
+Check out the website:
+https://everest-ledger.netlify.app/
